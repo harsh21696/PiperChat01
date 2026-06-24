@@ -1,13 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
+
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1e1f22" />
+
     <title>PiperChat</title>
+    <meta name="description" content="PiperChat — real-time messaging for teams and communities. Create servers, join channels, and chat instantly." />
+    <link rel="canonical" href="https://piperchat.vercel.app" />
+
+    <meta property="og:title"       content="PiperChat" />
+    <meta property="og:description" content="Real-time messaging for teams and communities." />
+    <meta property="og:image"       content="/og-image.png" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://piperchat.vercel.app" />
+    <meta name="twitter:card"  content="summary_large_image" />
+    <meta name="twitter:title" content="PiperChat" />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="preconnect" href="https://your-backend.railway.app" />
   </head>
   <body>
+    
+    <noscript>
+      <style>
+        body {
+          background: #1e1f22; color: #fff;
+          font-family: sans-serif; display: flex;
+          align-items: center; justify-content: center;
+          height: 100vh; margin: 0; text-align: center;
+          padding: 1rem;
+        }
+      </style>
+      <p>PiperChat requires JavaScript to run.<br>Please enable it in your browser settings.</p>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
